@@ -1,0 +1,58 @@
+﻿using Autofac.Extras.Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xunit;
+using Calculators;
+using Moq;
+
+namespace xUnitTests
+{
+    public class MoqICalculator
+    {
+        [Fact]
+        public void Factorial_ReturnsFactorial()
+        {
+            
+            int numeroFactorial = 5;
+            int expected = 120;
+
+            Mock<ICalculator> ICalculator = new Mock<ICalculator>();
+
+            ICalculator.Setup(x => x.Mul(It.IsAny<int>(), It.IsAny<int>()))
+                .Returns((int first, int second) => first * second);
+
+
+            Series factorial = new Series(ICalculator.Object);
+
+            int pruebaFactorial = factorial.Factorial(numeroFactorial);
+
+            Assert.Equal(expected, pruebaFactorial);
+
+        }
+        [Fact]
+        public void Fibonacci_ReturnsFibonacci()
+        {
+
+            int numeroFibonacci = 10;
+            int expected = 55;
+
+            Mock<ICalculator> ICalculator = new Mock<ICalculator>();
+
+            ICalculator.Setup(x => x.Add(It.IsAny<int>(), It.IsAny<int>()))
+                .Returns((int first, int second) => first + second);
+
+
+            Series factorial = new Series(ICalculator.Object);
+
+            int actual = factorial.Fibonacci(numeroFibonacci);
+
+            Assert.Equal(expected, actual);
+
+        }
+    }
+
+   
+}
