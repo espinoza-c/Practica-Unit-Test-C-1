@@ -15,7 +15,7 @@ namespace xUnitTests
         [Fact]
         public void Factorial_ReturnsFactorial()
         {
-            
+            //arrange
             int numeroFactorial = 5;
             int expected = 120;
 
@@ -27,15 +27,17 @@ namespace xUnitTests
 
             Series factorial = new Series(ICalculator.Object);
 
+            //act
             int pruebaFactorial = factorial.Factorial(numeroFactorial);
 
+            //assert
             Assert.Equal(expected, pruebaFactorial);
 
         }
         [Fact]
         public void Fibonacci_ReturnsFibonacci()
         {
-
+            //arrange
             int numeroFibonacci = 10;
             int expected = 55;
 
@@ -47,8 +49,11 @@ namespace xUnitTests
 
             Series factorial = new Series(ICalculator.Object);
 
+            //act
             int actual = factorial.Fibonacci(numeroFibonacci);
 
+
+            //assert
             Assert.Equal(expected, actual);
 
         }
