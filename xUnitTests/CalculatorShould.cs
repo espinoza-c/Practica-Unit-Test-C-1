@@ -11,9 +11,8 @@ namespace xUnitTests
     public class CalculatorShould
     {
         [Fact]
-        public void Add()
+        public void Add_TwoFloatNumbers_ReturnsCorrectSum()
         {
-
             //Arrange
             Calculator addValidator = new Calculator();
             float numeroUno = 5.01f;
@@ -27,7 +26,7 @@ namespace xUnitTests
             Assert.Equal(expected, isEqual);
         }
         [Fact]
-        public void Sub()
+        public void Sub_TwoFloatNumbers_ReturnsCorrectSubtraction()
         {
             //Arrange
             Calculator addValidator = new Calculator();
@@ -49,7 +48,7 @@ namespace xUnitTests
         [InlineData(850, 10.2)]
         [InlineData(3.1416, 5.555)]
 
-        public void ValidateMul(float a, float b)
+        public void Mul_TwoFloatNumbers_ReturnsCorrectMultiplication(float a, float b)
         {
             //Arrange
             Calculator mulValidator = new Calculator();
@@ -69,7 +68,7 @@ namespace xUnitTests
         [InlineData(850, 10.2)]
         [InlineData(3.1416, 5.555)]
 
-        public void ValidateDiv(float a, float b)
+        public void Div_TwoFloatNumbers_ReturnsCorrectDivision(float a, float b)
         {
             //Arrange
             Calculator divValidator = new Calculator();

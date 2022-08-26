@@ -11,7 +11,7 @@ namespace xUnitTests
     public class DivCero
     {
         [Fact]
-        public void RaiseErrorWhenDividedByZero()
+        public void Div_ByZero_ReturnsDivideByZeroException()
         {
             //Arrange
             Calculator divZeroValidator = new Calculator();

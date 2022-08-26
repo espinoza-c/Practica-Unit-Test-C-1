@@ -13,7 +13,7 @@ namespace xUnitTests
     public class MoqICalculator
     {
         [Fact]
-        public void Factorial_ReturnsFactorial()
+        public void Factorial_SingleNumber_ReturnsSingleNumberFactorial()
         {
             //arrange
             int numeroFactorial = 5;
@@ -35,7 +35,7 @@ namespace xUnitTests
 
         }
         [Fact]
-        public void Fibonacci_ReturnsFibonacci()
+        public void Fibonacci_SingleNumber_ReturnsSingleNumberFibonacci()
         {
             //arrange
             int numeroFibonacci = 10;

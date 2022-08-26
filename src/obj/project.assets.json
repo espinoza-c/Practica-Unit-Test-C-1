@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a875026\\Downloads\\src\\Calculators.csproj",
+      "projectUniqueName": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\src\\Calculators.csproj",
       "projectName": "Calculators",
-      "projectPath": "C:\\Users\\a875026\\Downloads\\src\\Calculators.csproj",
+      "projectPath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\src\\Calculators.csproj",
       "packagesPath": "C:\\Users\\a875026\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a875026\\Downloads\\src\\obj\\",
+      "outputPath": "C:\\Users\\a875026\\source\\repos\\Practica Unit Test c# 1\\src\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a875026\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
